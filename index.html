@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>High-Class Product Gallery</title>
+<style>
+    body {
+        margin: 0;
+        font-family: "Noto Sans JP", sans-serif;
+        background: #0d0d0d;
+        color: #fff;
+    }
+
+    /* ヘッダー */
+    header {
+        text-align: center;
+        padding: 40px 20px;
+        background: linear-gradient(135deg, #000, #1a1a1a);
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    header h1 {
+        font-size: 40px;
+        letter-spacing: 3px;
+        color: #d4af37;
+    }
+    header p {
+        color: #bbb;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    /* グリッド */
+    .container {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 30px;
+    }
+
+    /* 商品カード */
+    .card {
+        background: #141414;
+        border: 1px solid rgba(212, 175, 55, 0.3);
+        border-radius: 14px;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(212, 175, 55, 0.1);
+        transition: 0.3s;
+    }
+    .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 0 25px rgba(212, 175, 55, 0.4);
+    }
+
+    .card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .card-body h2 {
+        font-size: 20px;
+        margin: 0 0 10px;
+        color: #f1d283;
+    }
+
+    .card-body p {
+        color: #ccc;
+        font-size: 14px;
+        line-height: 1.6;
+        height: 70px;
+        overflow: hidden;
+    }
+
+    .price {
+        font-size: 22px;
+        margin: 15px 0;
+        color: #d4af37;
+        font-weight: bold;
+    }
+
+    .btn {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        background: #d4af37;
+        color: #000;
+        padding: 12px 0;
+        border-radius: 6px;
+        font-size: 16px;
+        text-decoration: none;
+        transition: 0.2s;
+    }
+    .btn:hover {
+        background: #f1d283;
+    }
+
+    footer {
+        text-align: center;
+        padding: 30px;
+        margin-top: 50px;
+        color: #777;
+        font-size: 14px;
+        background: #0a0a0a;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>PREMIUM PRODUCT COLLECTION</h1>
+    <p>高級感のある特別なアイテムを揃えました</p>
+</header>
+
+<!-- 複数商品コンテナ -->
+<div class="container">
+
+    <!-- 商品① -->
+    <div class="card">
+        <img src="https://via.placeholder.com/400x300?text=Product+1" alt="">
+        <div class="card-body">
+            <h2>プレミアムデザインテンプレート</h2>
+            <p>高級感あふれるビジネス用テンプレート。商用利用可能で幅広く使えます。</p>
+            <div class="price">¥4,800</div>
+            <a href="#" class="btn">詳細を見る</a>
+        </div>
+    </div>
+
+    <!-- 商品② -->
+    <div class="card">
+        <img src="https://via.placeholder.com/400x300?text=Product+2" alt="">
+        <div class="card-body">
+            <h2>エレガント・ランディングページ</h2>
+            <p>高級ブランド向けにデザインされたLPテンプレート。完全レスポンシブ対応。</p>
+            <div class="price">¥6,200</div>
+            <a href="#" class="btn">詳細を見る</a>
+        </div>
+    </div>
+
+    <!-- 商品③ -->
+    <div class="card">
+        <img src="https://via.placeholder.com/400x300?text=Product+3" alt="">
+        <div class="card-body">
+            <h2>プレミアムバナーセット</h2>
+            <p>広告・SNS用の高級感バナーを多数収録したデザインセット。</p>
+            <div class="price">¥3,200</div>
+            <a href="#" class="btn">詳細を見る</a>
+        </div>
+    </div>
+
+    <!-- 商品④ -->
+    <div class="card">
+        <img src="https://via.placeholder.com/400x300?text=Product+4" alt="">
+        <div class="card-body">
+            <h2>ゴールドUIアイコンパック</h2>
+            <p>黒×金をモチーフにした高級UIアイコンのセット。高品質PNG/SVG。</p>
+            <div class="price">¥2,500</div>
+            <a href="#" class="btn">詳細を見る</a>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    © 2025 PREMIUM COLLECTION
+</footer>
+
+</body>
+</html>
+
