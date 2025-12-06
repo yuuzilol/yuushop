@@ -3,31 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>High-Class Product Gallery</title>
+<title>YUUSHOP KAWAIIGAMING - Premium Digital Life</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 <style>
+    /* 全体の設定 */
     body {
         margin: 0;
-        font-family: "Noto Sans JP", sans-serif;
-        background: #0d0d0d;
+        font-family: 'Poppins', 'Noto Sans JP', sans-serif;
+        background: #120a2e; /* 濃い紫色系の背景 */
         color: #fff;
     }
 
     /* ヘッダー */
     header {
         text-align: center;
-        padding: 40px 20px;
-        background: linear-gradient(135deg, #000, #1a1a1a);
-        border-bottom: 1px solid rgba(255,255,255,0.1);
+        padding: 60px 20px 40px;
+        background: linear-gradient(135deg, #120a2e, #2c0f6f); /* グラデーション */
+        border-bottom: 3px solid #ff69b4; /* ショッキングピンクの強調線 */
     }
     header h1 {
-        font-size: 40px;
-        letter-spacing: 3px;
-        color: #d4af37;
+        font-size: 48px;
+        letter-spacing: 5px;
+        color: #ffc0cb; /* 薄いピンク */
+        text-shadow: 0 0 10px rgba(255, 105, 180, 0.8); /* ネオン風シャドウ */
+        font-weight: 700;
+        margin-bottom: 5px;
     }
     header p {
-        color: #bbb;
+        color: #e0e0e0;
         margin-top: 10px;
-        font-size: 16px;
+        font-size: 18px;
     }
 
     /* グリッド */
@@ -42,16 +47,16 @@
 
     /* 商品カード */
     .card {
-        background: #141414;
-        border: 1px solid rgba(212, 175, 55, 0.3);
-        border-radius: 14px;
+        background: #1d0f4d; /* カード背景色 */
+        border: 2px solid #ff69b4; /* ピンクの枠線 */
+        border-radius: 18px;
         overflow: hidden;
-        box-shadow: 0 0 20px rgba(212, 175, 55, 0.1);
+        box-shadow: 0 0 15px rgba(255, 105, 180, 0.4);
         transition: 0.3s;
     }
     .card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 0 25px rgba(212, 175, 55, 0.4);
+        transform: translateY(-10px) scale(1.02);
+        box-shadow: 0 0 30px rgba(255, 105, 180, 0.8);
     }
 
     .card img {
@@ -62,115 +67,129 @@
 
     .card-body {
         padding: 20px;
+        text-align: center;
     }
 
     .card-body h2 {
-        font-size: 20px;
+        font-size: 22px;
         margin: 0 0 10px;
-        color: #f1d283;
+        color: #ffc0cb; /* 薄いピンク */
+        font-weight: 600;
     }
 
     .card-body p {
         color: #ccc;
         font-size: 14px;
         line-height: 1.6;
-        height: 70px;
+        height: 60px;
         overflow: hidden;
+        margin-bottom: 20px;
     }
 
     .price {
-        font-size: 22px;
+        font-size: 26px;
         margin: 15px 0;
-        color: #d4af37;
-        font-weight: bold;
+        color: #90ee90; /* ライトグリーン（金額の強調） */
+        font-weight: 700;
     }
 
     .btn {
         display: inline-block;
         width: 100%;
         text-align: center;
-        background: #d4af37;
-        color: #000;
+        background: #ff69b4; /* ショッキングピンク */
+        color: #120a2e; /* 濃い背景色と同じ色でコントラスト */
         padding: 12px 0;
-        border-radius: 6px;
+        border-radius: 8px;
         font-size: 16px;
         text-decoration: none;
+        font-weight: 700;
         transition: 0.2s;
+        border: none;
     }
     .btn:hover {
-        background: #f1d283;
+        background: #ffc0cb;
+        color: #120a2e;
     }
 
+    /* フッター */
     footer {
         text-align: center;
         padding: 30px;
         margin-top: 50px;
-        color: #777;
+        color: #999;
         font-size: 14px;
-        background: #0a0a0a;
+        background: #0a051d; /* 非常に濃い背景色 */
+        border-top: 1px solid rgba(255, 105, 180, 0.2);
     }
 </style>
 </head>
 <body>
 
 <header>
-    <h1>PREMIUM PRODUCT COLLECTION</h1>
-    <p>高級感のある特別なアイテムを揃えました</p>
+    <h1>YUUSHOP KAWAIIGAMING</h1>
+    <p>⚡ **あなたのデジタルライフをブースト！** ⚡</p>
 </header>
 
-<!-- 複数商品コンテナ -->
 <div class="container">
 
-    <!-- 商品① -->
     <div class="card">
-        <img src="https://via.placeholder.com/400x300?text=Product+1" alt="">
+        <img src="https://i.imgur.com/VsOLSGw.jpeg" alt="Discord Nitro">
         <div class="card-body">
-            <h2>プレミアムデザインテンプレート</h2>
-            <p>高級感あふれるビジネス用テンプレート。商用利用可能で幅広く使えます。</p>
-            <div class="price">¥4,800</div>
-            <a href="#" class="btn">詳細を見る</a>
+            <h2>Discord Nitro (1ヶ月)</h2>
+            <p>サーバーブースト、カスタム絵文字、HDストリーミングなど、フル機能のNitroでDiscordを最大限に楽しもう！</p>
+            <div class="price">¥1,000</div>
+            <a href="#" class="btn">今すぐブースト</a>
         </div>
     </div>
 
-    <!-- 商品② -->
     <div class="card">
-        <img src="https://via.placeholder.com/400x300?text=Product+2" alt="">
+        <img src="https://i.imgur.com/ihMBber.jpeg" alt="Steam Giftcard">
         <div class="card-body">
-            <h2>エレガント・ランディングページ</h2>
-            <p>高級ブランド向けにデザインされたLPテンプレート。完全レスポンシブ対応。</p>
-            <div class="price">¥6,200</div>
-            <a href="#" class="btn">詳細を見る</a>
+            <h2>Steam ギフトカード (少額可)</h2>
+            <p>コンビニでは買えない、お財布に優しい少額から購入可能！欲しかったゲームをすぐ手に入れよう！</p>
+            <div class="price">¥500 ~</div>
+            <a href="#" class="btn">チャージする</a>
         </div>
     </div>
 
-    <!-- 商品③ -->
     <div class="card">
-        <img src="https://via.placeholder.com/400x300?text=Product+3" alt="">
+        <img src="https://i.imgur.com/cWU5bb8.jpeg" alt="Nintendo Switch">
         <div class="card-body">
-            <h2>プレミアムバナーセット</h2>
-            <p>広告・SNS用の高級感バナーを多数収録したデザインセット。</p>
-            <div class="price">¥3,200</div>
-            <a href="#" class="btn">詳細を見る</a>
+            <h2>Switch 究極パック</h2>
+            <p>制限を気にせず遊びたいあなたへ。あんしんみまもり制限なしで自由なゲーミング体験を。</p>
+            <div class="price">¥500 ~</div>
+            <a href="#" class="btn">無敵になる</a>
         </div>
     </div>
 
-    <!-- 商品④ -->
     <div class="card">
-        <img src="https://via.placeholder.com/400x300?text=Product+4" alt="">
+        <img src="https://i.imgur.com/RAGJWeh.jpeg" alt="ランダム福袋">
         <div class="card-body">
-            <h2>ゴールドUIアイコンパック</h2>
-            <p>黒×金をモチーフにした高級UIアイコンのセット。高品質PNG/SVG。</p>
-            <div class="price">¥2,500</div>
-            <a href="#" class="btn">詳細を見る</a>
+            <h2>ミステリー・福袋</h2>
+            <p>何が当たるかはお楽しみ！限定アカウントやレアアイテムが当たるかも！？さあ、運試し！</p>
+            <div class="price">¥500 (×2個!)</div>
+            <a href="#" class="btn">ガチャを引く</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://i.imgur.com/2dVEtYq.jpeg" alt="ランダム福袋">
+        <div class="card-body">
+            <h2>非売品　愛/h2>
+            <p>No コメントで</p>
+            <div class="price">¥0</div>
+            <a href="#" class="btn">愛を受け取る</a>
         </div>
     </div>
 
 </div>
 
 <footer>
-    © 2025 PREMIUM COLLECTION
+    © 2025 YUUSHOP KAWAIIGAMING - All Rights Reserved.
 </footer>
 
 </body>
 </html>
+
 
